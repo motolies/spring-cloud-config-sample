@@ -9,7 +9,7 @@ management:
 
 eureka:
   instance:
-    hostname: ${peer:peer1}.${container_name:127.0.0.1}.nip.io
+    hostname: ${peer:peer1}.127.0.0.1.nip.io
   client:
     register-with-eureka: true
     fetch-registry: true
