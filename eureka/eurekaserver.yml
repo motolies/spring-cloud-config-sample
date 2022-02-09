@@ -7,9 +7,16 @@ management:
     shutdown:
       enabled: true
 
+# eureka:
+#   client:
+#     register-with-eureka: false
+#     fetch-registry: false
+
 eureka:
+  instance:
+    hostname: ${peer:peer1}.127.0.0.1.nip.io
   client:
-    register-with-eureka: false
-    fetch-registry: false
-  # server:
-  #   wait-time-in-ms-when-sync-empty: 5
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://peer1.127.0.0.1.nip.io:8761/eureka,http://peer2.127.0.0.1.nip.io:8762/eureka
