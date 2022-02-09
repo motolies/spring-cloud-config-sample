@@ -12,11 +12,11 @@ eureka:
     appname: eureka-cluster
     hostname: ${host_name}
     preferIpAddress: true
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    service-url: defaultZone:http://${eureka.replicas.node.host}:${eureka.replicas.node.port}/eureka/
   replicas:
     node:
       host: ${host_name}
       port: ${PORT}
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url: defaultZone:http://${eureka.replicas.node.host}:${eureka.replicas.node.port}/eureka/
