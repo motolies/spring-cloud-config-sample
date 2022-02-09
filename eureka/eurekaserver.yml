@@ -1,0 +1,15 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    shutdown:
+      enabled: true
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  server:
+    wait-time-in-ms-when-sync-empty: 5
