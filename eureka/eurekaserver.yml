@@ -10,14 +10,13 @@ management:
 eureka:
   instance:
     appname: eureka-cluster
-    hostname: ${host_name:127.0.0.1}
+    hostname: ${host_name}
     preferIpAddress: true
   client:
     register-with-eureka: true
     fetch-registry: true
-    service-url:
-      defaultZone: http://eureka1:8761/eureka,http://eureka2:8762/eureka
+    service-url: defaultZone:http://${eureka.replicas.node.host}:${eureka.replicas.node.port}/eureka/
   replicas:
     node:
-      host: ${host_name:127.0.0.1}
+      host: ${host_name}
       port: ${PORT}
