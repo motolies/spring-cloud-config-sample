@@ -1,3 +1,10 @@
 jwt:
   secret: sinnandaaaaaaaaaaaaaaaaaaa_user
   expiration: 604800
+
+eureka: # 추가
+  instance:
+    prefer-ip-address: true # 서비스 이름 대신 IP 주소 등록
+  client:
+    register-with-eureka: true # 유레카 서버에 서비스 등록
+    fetch-registry: true
