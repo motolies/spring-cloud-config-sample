@@ -12,8 +12,9 @@ eureka:
     appname: eureka-cluster
     hostname: ${host_name}
     preferIpAddress: true
+  # eureka cluster 구축해보려고 했으나 도커 환경에서는 잘 모르겠다.
   client:
-    register-with-eureka: true
-    fetch-registry: true
+    register-with-eureka: false
+    fetch-registry: false
     service-url:
-      defaultZone: http://172.18.0.115:8761/eureka/,http://172.18.0.116:8762/eureka/
+      defaultZone: http://localhost:8761/eureka/
