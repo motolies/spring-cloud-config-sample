@@ -19,4 +19,5 @@ eureka:
   client:
     register-with-eureka: true
     fetch-registry: true
-    service-url: defaultZone:http://${eureka.replicas.node.host}:${eureka.replicas.node.port}/eureka/
+    service-url:
+      defaultZone: http://${eureka.replicas.node.host}:${eureka.replicas.node.port}/eureka/
