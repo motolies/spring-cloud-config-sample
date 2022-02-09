@@ -15,7 +15,7 @@ eureka:
   replicas:
     node:
       host: ${host_name}
-      port: ${PORT}
+      port: ${port}
   client:
     register-with-eureka: true
     fetch-registry: true
