@@ -1,0 +1,3 @@
+jwt:
+  secret: sinnandaaaaaaaaaaaaaaaaaaa_user
+  expiration: 604800
