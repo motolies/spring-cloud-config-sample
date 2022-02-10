@@ -1,5 +1,5 @@
 jwt:
-  secret: sinnandaaaaaaaaaaaaaaaaaaa_user
+  secret: user_server_아니다
   expiration: 604800
 
 eureka: # 추가
