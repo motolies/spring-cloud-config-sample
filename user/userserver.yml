@@ -1,5 +1,5 @@
 jwt:
-  secret: user_server_right
+  secret: user_server_bobobobo
   expiration: 604800
 
 eureka: # 추가
