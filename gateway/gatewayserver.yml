@@ -1,6 +1,7 @@
 jwt:
-  secret: sinnandaaaaaaaaaaaaaaaaaaa_user
-  expiration: 604800
+  secret: fmCommunications@fmlabs4xtl&longLongP4ssw0rd**
+  auth.expiration: 86400
+  refresh.expiration: 604800
 
 eureka: # 추가
   instance:
